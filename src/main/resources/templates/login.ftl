@@ -5,4 +5,5 @@
 Login page
 <@l.login "/login" />
 <a href="/registration">Add new user</a>
+<a href="/upload">upload file</a>
 </@c.page>

@@ -4,6 +4,8 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.Collection;
 import java.util.Set;
 
@@ -55,6 +57,7 @@ public class User implements UserDetails {
         this.id = id;
     }
 
+    @NotBlank
     public String getUsername() {
         return username;
     }
